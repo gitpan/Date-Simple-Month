@@ -2,9 +2,10 @@ package Date::Simple::Month;
 
 use strict;
 use base qw (Date::Range);
-
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
+
+use Date::Simple;
 
 sub new {
 	my $class = shift;
@@ -146,9 +147,6 @@ If no argument is given a list starts from Sunday.
 =head1 AUTHOR
 
 Yasuhiro Horiuchi E<lt>horiuchi@vcube.comE<gt>
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
